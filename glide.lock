@@ -1,0 +1,62 @@
+hash: 89ca5b1de727529a7a11a5004a621b91c15c83c3d03ee53673dd1974b9813642
+updated: 2017-06-08T16:59:21.47111445-04:00
+imports:
+- name: github.com/gedex/inflector
+  version: 16278e9db8130ac7ec405dc174cfb94344f16325
+- name: github.com/gin-gonic/gin
+  version: d5b353c5d5a560322e6d96121c814115562501f7
+  subpackages:
+  - binding
+  - render
+- name: github.com/golang/protobuf
+  version: 2402d76f3d41f928c7902a765dfc872356dd3aad
+  subpackages:
+  - proto
+- name: github.com/julienschmidt/httprouter
+  version: 975b5c4c7c21c0e3d2764200bf2aa8e34657ae6e
+- name: github.com/manucorporat/sse
+  version: ee05b128a739a0fb76c7ebd3ae4810c1de808d6d
+- name: github.com/manyminds/api2go
+  version: b893b9448d075a17008d94413004e337705bb212
+  subpackages:
+  - jsonapi
+  - routing
+- name: github.com/manyminds/api2go-adapter
+  version: 84e19abf33747f08f7eda44aa7d293a29194380c
+  subpackages:
+  - gingonic
+- name: github.com/mattn/go-isatty
+  version: 56b76bdf51f7708750eac80fa38b952bb9f32639
+- name: github.com/mattn/go-sqlite3
+  version: ca5e3819723d8eeaf170ad510e7da1d6d2e94a08
+- name: github.com/steinbacher/goose
+  version: dc457c3195032dd1c3848e21dc95ed02c92f8cfa
+  subpackages:
+  - cmd/goose
+- name: golang.org/x/net
+  version: f315505cf3349909cdf013ea56690da34e96a451
+  subpackages:
+  - context
+- name: golang.org/x/sys
+  version: 8f0908ab3b2457e2e15403d3697c9ef5cb4b57a9
+  subpackages:
+  - unix
+- name: gopkg.in/gin-gonic/gin.v1
+  version: e2212d40c62a98b388a5eb48ecbdcf88534688ba
+- name: gopkg.in/go-playground/validator.v8
+  version: c193cecd124b5cc722d7ee5538e945bdb3348435
+- name: gopkg.in/yaml.v2
+  version: 53feefa2559fb8dfa8d81baad31be332c97d6c77
+- name: upper.io/db.v3
+  version: deacccd45909c462bb89752f27a2686a47be9372
+  subpackages:
+  - internal/cache
+  - internal/cache/hashstructure
+  - internal/immutable
+  - internal/sqladapter
+  - internal/sqladapter/compat
+  - internal/sqladapter/exql
+  - lib/reflectx
+  - lib/sqlbuilder
+  - sqlite
+testImports: []

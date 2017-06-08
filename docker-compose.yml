@@ -1,0 +1,29 @@
+version: '2'
+services:
+
+  leader:
+    image: python:3.5
+    command: bash -c 'pip install requests && python scripts/test.py http://asset-server1:8080 http://asset-server2:8080'
+    volumes:
+      - ./scripts/:/scripts/:ro
+    networks:
+      - asset-network
+    depends_on:
+      - asset-server1
+      - asset-server2
+
+  asset-server1:
+    build: .
+    command: ./build/asset-server -host :8080 asset-server2:8080
+    networks:
+      - asset-network
+
+  asset-server2:
+    build: .
+    command: ./build/asset-server -host :8080 asset-server1:8080
+    networks:
+      - asset-network
+
+networks:
+  asset-network:
+    driver: bridge

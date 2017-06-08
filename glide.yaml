@@ -1,0 +1,16 @@
+package: github.com/chrisseto/asset-server
+import:
+- package: gopkg.in/gin-gonic/gin.v1
+  version: ^1.1.4
+- package: github.com/steinbacher/goose
+  subpackages:
+  - cmd/goose
+- package: upper.io/db.v3
+  version: ^3.1.0
+  subpackages:
+  - sqlite
+- package: github.com/manyminds/api2go
+  version: b893b9448d075a17008d94413004e337705bb212
+- package: github.com/manyminds/api2go-adapter
+  subpackages:
+  - gingonic
